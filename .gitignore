@@ -1,0 +1,13 @@
+# Parquet files
+parquet_files/
+
+# Backend binaries
+backend/search-engine
+
+# Frontend build artifacts
+frontend/node_modules/
+frontend/build/
+
+# Go build cache
+*.exe
+*.test
