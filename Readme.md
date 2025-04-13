@@ -38,24 +38,25 @@ A full-stack search engine implementation for processing and searching Parquet f
 cd backend
 go mod download
 go run main.go
+```
 
+### Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-
-
+```
 
 ### Environment Configuration
 
 The application uses default ports:
 
-*   Backend: localhost:8080
+- Backend: localhost:8080
 
-*   Frontend: localhost:3000
+- Frontend: localhost:3000
 
-
-Benchmarks and Performance Tuning
----------------------------------
+## Benchmarks and Performance Tuning
 
 ### Benchmark Results
 
@@ -71,67 +72,60 @@ Benchmarks and Performance Tuning
 
 4.  **Memory Optimization**: Used pointers in data structures to reduce memory overhead
 
-
 ### Potential Improvements
 
-*   Implement inverted index for faster searches
+- Implement inverted index for faster searches
 
-*   Add field-specific indexing
+- Add field-specific indexing
 
-*   Implement result caching for repeated queries
+- Implement result caching for repeated queries
 
-
-Stretch Goals and Enhancements
-------------------------------
+## Stretch Goals and Enhancements
 
 ### Implemented Stretch Goals
 
 ✅ **File Upload Functionality**
 
-*   Users can upload new Parquet files after application startup
+- Users can upload new Parquet files after application startup
 
-*   Backend automatically reindexes all files including the new upload
-
+- Backend automatically reindexes all files including the new upload
 
 ### Notable Enhancements
 
 1.  **Search Statistics**:
 
-    *   Track and display search time
+    - Track and display search time
 
-    *   Show total records and match count
+    - Show total records and match count
 
 2.  **UI Improvements**:
 
-    *   Loading indicators during search/upload
+    - Loading indicators during search/upload
 
-    *   Clear error messaging
+    - Clear error messaging
 
-    *   Responsive design for different screen sizes
+    - Responsive design for different screen sizes
 
 3.  **Data Visualization**:
 
-    *   Formatted display of record metadata
+    - Formatted display of record metadata
 
-    *   Human-readable timestamps
+    - Human-readable timestamps
 
 4.  **Error Handling**:
 
-    *   Robust error handling for file processing
+    - Robust error handling for file processing
 
-    *   User feedback for invalid operations
+    - User feedback for invalid operations
 
+## Future Work
 
-Future Work
------------
+- Implement more advanced search operators (AND/OR/NOT)
 
-*   Implement more advanced search operators (AND/OR/NOT)
+- Add pagination for large result sets
 
-*   Add pagination for large result sets
+- Support for partial word matching
 
-*   Support for partial word matching
+- Field-specific search filters
 
-*   Field-specific search filters
-
-*   Dockerize the application for easy deployment
-```
+- Dockerize the application for easy deployment
