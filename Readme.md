@@ -1,4 +1,4 @@
-# Apica Search Engine
+# Search Engine
 
 A full-stack search engine implementation for processing and searching Parquet files with Go backend and React frontend.
 
