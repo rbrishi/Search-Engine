@@ -117,15 +117,3 @@ The application uses default ports:
     - Robust error handling for file processing
 
     - User feedback for invalid operations
-
-## Future Work
-
-- Implement more advanced search operators (AND/OR/NOT)
-
-- Add pagination for large result sets
-
-- Support for partial word matching
-
-- Field-specific search filters
-
-- Dockerize the application for easy deployment
